@@ -21,7 +21,14 @@
   - CentOS/RHEL：`sudo yum install php-mbstring && sudo systemctl restart php-fpm`
 
 ## 安装
-### 方式一：作为本地路径包使用
+### 方式一：作为 Composer 包使用（推荐）
+在你的主项目根目录执行：
+```bash
+composer require xx19941215/dingtalk-stream-sdk-php
+```
+（若未发布到 Packagist，可配合“方式二/三”添加 repositories 源。）
+
+### 方式二：作为本地路径包使用
 在你的主项目 `composer.json` 增加：
 ```json
 {
@@ -42,7 +49,7 @@
 composer update xx19941215/dingtalk-stream-sdk-php
 ```
 
-### 方式二：作为 VCS 仓库使用
+### 方式三：作为 VCS 仓库使用
 将本仓库推送到你的 Git 服务后，在主项目 `composer.json` 增加：
 ```json
 {
@@ -64,7 +71,7 @@ composer require xx19941215/dingtalk-stream-sdk-php
 
 ## 快速开始
 ```php
-use OpenDingTalk\Stream\DingTalkStreamClient;
+use Xx19941215\DingTalkStream\DingTalkStreamClient;
 use GuzzleHttp\Client as HttpClient;
 use Psr\Log\NullLogger;
 
