@@ -3,6 +3,7 @@
   "description": "PHP SDK for DingTalk Stream Mode (事件推送、机器人收消息、卡片回调) 的 Composer 包",
   "type": "library",
   "license": "MIT",
+  "version": "1.0.0",
    "authors": [
         {
             "name": "xiaoxiao",
