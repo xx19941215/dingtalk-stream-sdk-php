@@ -1,0 +1,23 @@
+{
+  "name": "xx19941215/dingtalk-stream-sdk-php",
+  "description": "PHP SDK for DingTalk Stream Mode (事件推送、机器人收消息、卡片回调) 的 Composer 包",
+  "type": "library",
+  "license": "MIT",
+   "authors": [
+        {
+            "name": "xiaoxiao",
+            "email": "857635782@qq.com"
+        }
+    ],
+  "require": {
+    "php": ">=7.4",
+    "textalk/websocket": "^1.6",
+    "guzzlehttp/guzzle": "^7.0",
+    "psr/log": "^1.1 || ^2.0 || ^3.0"
+  },
+   "autoload": {
+        "psr-4": {
+            "Xx19941215\\DingTalkStream\\": "src/"
+        }
+    }
+}
