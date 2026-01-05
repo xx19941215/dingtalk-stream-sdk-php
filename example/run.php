@@ -1,7 +1,6 @@
 <?php
 declare(strict_types=1);
 
-use OpenDingTalk\Stream\DingTalkStreamClient;
 use GuzzleHttp\Client as HttpClient;
 use Psr\Log\NullLogger;
 
