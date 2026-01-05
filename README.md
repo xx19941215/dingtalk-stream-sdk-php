@@ -26,7 +26,6 @@
 ```bash
 composer require xx19941215/dingtalk-stream-sdk-php
 ```
-（若未发布到 Packagist，可配合“方式二/三”添加 repositories 源。）
 
 ### 方式二：作为本地路径包使用
 在你的主项目 `composer.json` 增加：
